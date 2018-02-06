@@ -32,7 +32,6 @@ public class CreateDBTables {
         final Properties properties = new Properties();
         InputStream inputStream=this.getClass().getClassLoader().getResourceAsStream("dbConfig.properties");
         properties.load(inputStream);
-//        properties.load(new FileInputStream("D:\\ADMIN\\UserChatSiteDBWithServer\\UserChatSiteDBWithServer\\src\\main\\resources\\dbConfig.properties"));
         name=properties.getProperty("admin.name");
         surname=properties.getProperty("admin.surname");
         email=properties.getProperty("admin.email");
